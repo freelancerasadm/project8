@@ -1,0 +1,883 @@
+@font-face{
+    font-family:jost;
+    src:url("../webfonts/Jost\ Regular\ 400.woff") format("Woff")
+}
+/***Typography****/
+body{
+    font-family: 'Jost', sans-serif;
+    margin:0;
+    padding: 0;
+}
+img{
+    width:100%;
+}
+/*****Header Area Stard****/
+.navigation-bar{
+    background:#1B1B1B;
+    padding:20px 0px;
+}
+.logo-area span{
+    float:right;
+    margin-top:3px;
+    color:white;
+    font-size: 22px;
+    cursor: pointer;
+    display:none;
+}
+.main-menu{
+    list-style:none;
+    padding:0;
+    float:right;
+    margin-top:12px;
+}
+.main-menu li{
+    display:inline-block;
+    position: relative;
+}
+.main-menu li a{
+    text-decoration:none;
+    font-family: jost;
+    text-transform:capitalize;
+    color:#999;
+    font-weight: 300;
+    padding:15px 13px;
+    font-size: 16px;
+    transition:0.4s;
+}
+.main-menu li a i{
+    font-size: 10px;
+    margin-left:5px;
+}
+.main-menu li a:hover{
+    color:white;
+}
+.activec{
+    color:white !important;
+}
+.sub-menu{
+    position:
+    absolute;
+    background: #1B1B1B;
+    width: 200px;
+    padding: 10px 15px;
+    margin-top:50px;
+    opacity:0;
+    transition:0.3s;
+    z-index: 999;
+}
+.sub-menu li{
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px solid #3232328c;
+    margin-bottom: 5px;
+}
+.main-menu li:hover .sub-menu{
+    opacity:1;
+    margin-top:35px;display: block;
+}
+/*****Header Area Ends****/
+
+/********Slider Area Stard*******/
+.carousel-inner img{
+    height:500px !important;
+    object-fit:cover;
+}
+.slider-content{
+    text-align:left;
+}
+.slider-content h5{
+    font-size: 30px;
+    color:white;
+    text-transform:uppercase;
+}
+.slider-content p{
+    color:#ddd;
+}
+.position-inherit{
+  position: inherit;
+}
+.slider-area:before{
+    content:'';
+    background:#1b1b1b;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(0% 65%, 0% 0%, 100% 0%, 100% 35%);
+}
+.pabs{
+    position: relative;
+}
+/********Slider Area End*******/
+/****About Area Stard*****/
+.about-area{
+    padding-top:130px;
+    padding-bottom: 100px;
+}
+.about-content h2{
+    font-size: 38px;
+    margin-bottom:15px;
+}
+.about-content p{
+    color: rgb(167, 167, 167);
+    margin-bottom: 15px;
+}
+.about-list ul{
+    list-style:none;
+    padding:0;
+    border-bottom:1px solid #0605051a;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+.about-list ul li{
+    line-height: 30px;
+}
+.about-list ul li span{
+    color: rgb(167, 167, 167);;
+}
+.about-list ul li i{
+    background:#2B2B2B;
+    color: white;
+    padding:10px;
+    border-radius:100%;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+.about-left img{
+    width:80px;
+}
+.about-right h3{
+    font-size: 22px;
+    font-weight: 400;
+}
+.about-right p{
+    font-size: 14px;
+}
+.about-right-imgge img{
+    width:70%;
+    margin: auto;
+    display: block;
+    z-index: 999;
+    position: relative;
+    box-shadow: #2b2b2b 25px 25px 0px 5px;
+}
+.about-right-imgge{
+    position: relative;
+}
+.about-right-imgge::after{
+    content: '';
+    background-image: url(../image/Home/dots.png);
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 50px;
+    top: -46px;
+    z-index: 11;
+}
+/****About Area Ends*****/
+/****Services Area Stards*****/
+.services-area{
+    padding:100px 0px;
+    background-color: #1B1B1B;
+}
+.section-tile h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: white;
+}
+.section-desc p{
+    text-align: center;
+    color:white;
+    font-weight:300;
+    line-height:30px;
+    margin-bottom: 30px;
+}
+.services-single-box{
+    padding-left: 20px;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.services-icon img{
+    width:50px;
+    margin-bottom:30px;
+    height: 50px;
+}
+.services-title h2{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.services-desc{
+    color:rgb(121, 120, 120);
+}
+.border-one{
+    border-bottom:1px solid #323232;
+    border-right:1px solid #323232;
+}
+.border-two{
+    border-bottom:1px solid #323232;
+    border-right:1px solid #323232;
+}
+.border-three{
+    border-bottom:1px solid #323232;
+}
+.border-four{
+    border-right:1px solid #323232;
+}
+.border-five{
+    border-right:1px solid #323232;
+}
+/****Services Area Ends*****/
+/******News Area Stard*******/
+.news-area{
+    padding:100px 0px;
+    position: relative;
+}
+.news-title h2{
+    color: #1B1B1B;
+    font-size: 35px;
+    font-weight: 700;
+    border-bottom:1px solid #5858584b;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.news-title p{
+    color:#585858c4;
+    margin-bottom: 60px;
+}
+.news-img{
+    position: relative;
+    width: 66%;
+    margin-left: auto;
+}
+.news-content{
+    width:40%;
+    position: absolute;
+    top:40%;
+}
+.news-content{
+    background:white;
+    padding:40px 40px 40px 0px;
+}
+.news-btn{
+    margin-bottom: 30px;
+}
+.news-btn a{
+    text-decoration: none;
+    background-color: #1B1B1B;
+    color:white;
+    text-transform:uppercase;
+    font-size: 12px;
+    padding:7px 17px;
+    border:1px solid transparent;
+    transition:0.3s;
+}
+.news-btn a:hover{
+    border:1px solid #1B1B1B;
+    background-color: transparent;
+    color:black;
+}
+.news-content-desc h3{
+    margin-bottom: 20px;
+}
+.news-content-desc h3 a{
+    color: #1B1B1B;
+    font-weight: 700;
+    line-height:40px;
+    text-decoration: none;
+}
+.news-content-desc p{
+    color: #585858c4;
+    border-bottom: 1px solid #5858584b;
+    padding-bottom: 20px;
+    margin-bottom:30px;
+}
+.news-date a{
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 14px;
+    color: black;
+    width:50%;
+    display: block;
+    float: left;
+}
+.news-date a:after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #919191;
+    display: block;
+    margin-top: 3px;
+    transition:0.3s;
+}
+.news-date a:hover:after{
+    width: 75px;
+}
+.news-date .news-ahour{
+    float: right;
+    color: #585858c4;
+    width: 50%;
+    display: block;
+    overflow: hidden;
+}
+.news-date .news-ahour span{
+    float: right;
+}
+
+/******News Area Stard*******/
+.work-area{
+    background:#1B1B1B;
+    padding:100px 0px;
+}
+.work-title h2{
+    font-size: 35px;
+    color: white;
+    border-bottom:1px solid rgb(65, 64, 64);
+    margin-bottom: 30px;
+    padding-bottom:20px;
+}
+.work-tab ul li button{
+    color:rgb(141, 139, 139);
+    transition:0.3s;
+}
+.work-tab ul li button:hover{
+    color:rgb(255, 255, 255);
+}
+.work-dimantion{
+    margin-bottom: 50px !important;
+}
+.active{
+    background:transparent;
+}
+.nav-link{
+    background:transparent !important;
+}
+.nav-pills .nav-link {
+    border-radius: 0px;
+    margin: 4px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    border-bottom: 1px solid white;
+}
+.work-single-box{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+.work-single-content{
+    background: #1B1B1B;
+    width: 56%;
+    padding: 10px 5px;
+    position: absolute;
+    bottom: -120px;
+    transition:0.5s;
+}
+.work-single-box:hover .work-single-content{
+    bottom: 0px;
+}
+.work-sing-img img{
+    transition: 0.5s;
+}
+.work-single-box:hover .work-sing-img img{
+    transform: scale(1.1);
+}
+.work-single-content h6{
+    color:#a5a4a4;
+    font-size: 15px;
+}
+.work-single-content h4{
+    font-size: 18px;
+    color:white;
+}
+/******News Area Ends*******/
+/****Photograpy Area Stard***/
+.photograpy-area{
+    background: url(../image/Home/1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    background-attachment:fixed;
+    object-fit: cover;
+}
+.photograpy-title h3{
+    color: white;
+    margin-bottom:50px;
+}
+.photograpy-title a{
+    text-decoration:none;
+    color:white;
+    font-weight: 500;
+    border:1px solid white;
+    border-radius: 50px;
+    padding:12px 30px;
+    transition:0.4s;
+}
+.photograpy-title a:hover{
+    color: #1B1B1B;
+    background: white;
+}
+.photograpy-box{
+    background: white;
+    margin-left: 90px;
+    padding: 56px 50px;
+    position: relative;
+}
+.photograpy-desc p{
+    border-left:2px solid #1B1B1B;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    color: rgb(100, 100, 100);
+}
+.aoutor-img{
+    width:20%;
+    float: left;
+}
+.athour-degination{
+    width:80%;
+    overflow: hidden;
+}
+.athour-degination h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #2c2b2b;
+    margin-left: 20px;
+}
+.athour-degination h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: #44444486;
+    margin-left: 20px;
+}
+.aoutor-img img{
+    width:60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.photograpy-athour {
+    border-top: 1px solid #dddddd5c;
+    padding-top: 20px;
+}
+.photograpy-box span{
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+}
+.photograpy-box span img{
+    width: 70px;
+    opacity: 0.2;
+}
+.company-logo-area{
+    background: #1B1B1B;
+    padding: 10px 0px;
+    margin-top: -125px;
+}
+.company-logo ul{
+    list-style: none;
+    padding: 0;
+}
+.company-logo ul li{
+    display:inline-block;
+    width: 23%;
+}
+.company-logo ul li a img{
+    width: 150px;
+}
+/****Photograpy Area Ends!***/
+/****Footer Area Stard*******/
+.footer-area{
+    background:linear-gradient(#1b1b1bbe,#1b1b1bbe),url(../image/Home/12.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 100px;
+}
+.footer-top{
+    margin-bottom: 30px;
+}
+.footer-top-title h3{
+    font-size: 25px;
+    color: white;
+    margin-bottom:10px;
+}
+.footer-top-title p{
+    font-size: 15px;
+    color: rgba(168, 168, 168, 0.867);
+}
+.subscribe-area [type=email]{
+    width: 70%;
+    float: left;
+    padding: 17px 10px;
+    border-top:1px solid rgba(128, 127, 127, 0.582);
+    border-left:1px solid rgba(128, 127, 127, 0.582);
+    border-bottom:1px solid rgba(128, 127, 127, 0.582);
+    border-right:1px solid transparent;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
+    padding-left: 20px;
+    background: transparent;
+    color: white;
+}
+.subscribe-area [type=submit]{
+    width: 30%;
+    overflow: hidden;
+    padding: 17px 10px;
+    border:1px solid rgba(128, 127, 127, 0.582);
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition:0.3s;
+    background:white;
+}
+.subscribe-area [type=submit]:hover{
+    background: #2B2B2B;
+    border: 1px solid transparent;
+    color: white;
+}
+.footer-logo img{
+    width:150px;
+}
+.footer-logo{
+    margin-bottom: 20px;
+}
+.footer-xdesign{
+    border-top: 1px solid #4a4a4a52;
+    border-bottom: 1px solid #4a4a4a52;
+}
+.footer-box{
+    padding:40px 0px;
+}
+.footer-desc p{
+    color: rgba(168, 168, 168, 0.867);
+    line-height:28px;
+}
+.footer-title h3{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.footer-list ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-list ul li{
+    line-height: 40px;
+}
+.footer-list ul li a{
+    text-decoration: none;
+    color: rgba(168, 168, 168, 0.867);
+    text-transform:capitalize;
+}
+.footer-list ul li a i{
+    margin-right:15px;
+}
+.border-fiv{
+    border-left: 1px solid #4a4a4a52;
+    border-right: 1px solid #4a4a4a52;
+}
+.f-padding{
+    padding-left: 20px;
+}
+.copyright-area p{
+    color:rgba(168, 168, 168, 0.867);
+    font-size: 13px;
+}
+.footer-icon ul{
+    list-style:none;
+    padding:0;
+    float:right;
+}
+.footer-icon ul li{
+    display:inline-block;
+}
+.footer-icon ul li a{
+    text-decoration: none;
+    color:rgba(168, 168, 168, 0.867);
+    padding:0px 10px;
+    font-size: 14px;
+    transition:0.3s;
+}
+.footer-icon ul li a:hover{
+    color:white;
+}
+.copyright-text{
+    padding-top:30px;
+    padding-bottom: 10px;
+}
+/****Footer Area End*******/
+
+
+/*******About Area Stard****/
+/********About Slider Area****/
+.about-slider{
+    background: linear-gradient(#1b1b1b,#1b1b1bc9),url(../image/AboutUs/aboutslider.jpg);
+    background-repeat: no-repeat;
+    background-size:
+    cover;
+    background-position: top;
+}
+.slider-title{
+    padding:100px 0px;
+}
+.slider-title h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    border-bottom: 1px solid #ffffff14;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.slider-title p{
+    color: #bebcbca8;
+    line-height: 30px;
+}
+.about-litterl{
+    background-color: #1B1B1B;
+}
+.about-litters h3{
+    color:white;
+}
+/********About Slider End****/
+/*****About Work Stard******/
+.about-work-area{
+    padding:100px 0px;
+}
+.about-work-img img{
+    max-width: 400px;
+    box-shadow: -30px -30px 0px 0px #1b1b1bf0;
+    margin: auto;
+    display: block;
+    transition:0.5s;
+}
+.about-work-img img:hover{
+    transform:scale(0.9);
+}
+.about-work-img{
+    margin-bottom: 50px;
+}
+.about-work-title{
+    margin-bottom: 100px;
+}
+.about-work-title h2{
+    color: #1b1b1bfa;
+    font-size: 35px;
+}
+.about-work-title p{
+    color: #a5a4a4;
+    line-height:30px;
+}
+.about-work-left img{
+    max-width:500px;
+    margin: left;
+}
+.about-styles{
+    padding-left: 40px;
+    padding-top: 30px;
+}
+/*****About Work Ends******/
+/****Professional Team Area*****/
+.professional-team-area{
+    background: #1B1B1B;
+    padding: 100px 0px;
+}
+.professional-teams{
+    padding: 0;
+    padding-bottom: 40px;
+}
+.professional-img{
+    position:relative;
+    overflow: hidden;
+}
+.professional-team{
+    position: relative;
+}
+.professional-img::before{
+    content:'';
+    height: 100%;
+    width: 100%;
+    background: #26262652;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.5s;
+}
+.professional-team:hover .professional-img::before{
+    top:0;
+}
+.professional-title{
+    padding:0px 30px;
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    transition: 0.3s;
+    opacity: 0;
+}
+.professional-team:hover .professional-title{
+    bottom: 40%;
+    opacity: 1;
+}
+.professional-title h4{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.professional-title p{
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+}
+.professional-desc{
+    color:white;
+}
+.professional-desc{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    transition: 0.3s;
+    opacity: 1;
+}
+.professional-team:hover .professional-desc{
+    bottom: 40px;
+    opacity: 0;
+}
+.professional-desc h5{
+    width: 70%;
+    margin: auto;
+    background: #1B1B1B;
+    padding-top: 20px;
+}
+
+/****Professional Team End*****/
+/*******About Area Ends****/
+/*******Service Area Stard****/
+.service-slider{
+    background: linear-gradient(#1b1b1b,#1b1b1bc9),url(../image/Services/services.jpg);
+    background-repeat: no-repeat;
+    background-size:
+    cover;
+    background-position: top;
+}
+/*******Service Area Ends****/
+/*******Work Area Stard****/
+.work-slider{
+    background: linear-gradient(#1b1b1b,#1b1b1bc9),url(../image/Work/5.jpg);
+    background-repeat: no-repeat;
+    background-size:
+    cover;
+    background-position: top;
+}
+/*******Work Area Ends****/
+
+/********<!----Stard Contact Area----->******/
+.contact-area{
+    padding:100px 0px;
+    position: relative;
+}
+.contact-area::after{
+    content: '';
+    background: #1b1b1b;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(0% 75%, 0% 0%, 100% 0%, 100% 50%);
+    top:0;
+}
+.contact-information{
+    position: relative;
+    z-index: 999;
+}
+.contact-information h4{
+    color: white;
+    margin-bottom: 20px;
+}
+.contact-information h5{
+    color: #a5a4a4;
+}
+.contact-information p{
+    color: #a5a4a4;
+    line-height: 28px;
+    margin-bottom:40px;
+}
+.contact-information i{
+    color: white;
+}
+.contact-icon{
+    width:10%;
+    float: left;
+}
+.contact-icon i{
+    background: #2B2B2B;
+    width:100%;
+    display: block;
+    text-align: center;
+    padding:18px 0px;
+}
+.contact-desc{
+    width:90%;
+    overflow:hidden;
+    padding-left: 20px;
+}
+.contact-desc h4{
+    font-size: 17px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.contact-desc h5{
+    font-size: 16px;
+    padding: 0;
+    font-weight: 400;
+}
+.contact-icon-box{
+    margin-bottom: 20px;
+}
+.signup-area{
+    position: relative;
+    z-index: 999;
+    padding: 60px 50px;
+    background: #1b1b1b;
+    border-radius: 30px;
+    box-shadow: 2px 1px 5px 5px #ffffff03;
+}
+.signup-area input{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #c3c3c32b;
+}
+.signup-area textarea{
+    width: 100%;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #c3c3c32b;
+}
+.signup-area [type=submit]{
+    color: #181818;
+    width:40%;
+    background: white;
+    font-weight: 500;
+    border-radius:50px;
+    border: 1px solid white;
+    transition: .5s;
+    padding: 15px 5px;
+}
+.signup-area [type=submit]:hover{
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+.google-map iframe{
+    width: 100%;
+    height: 500px
+}
+/********<!----Stard Contact Ends----->******/

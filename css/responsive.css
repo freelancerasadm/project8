@@ -1,0 +1,126 @@
+@media screen and (max-width:992px){
+    .photograpy-box{
+        margin-left: 0px;
+    }
+    .photograpy-title{
+        margin-bottom: 70px;
+    }
+    .company-logo-area{
+        margin-top: 0px;
+    }
+    .subscribe-area [type=email]{
+        width: 60%;
+    }
+    .subscribe-area [type=submit]{
+        width: 40%;
+    }
+    .professional-title p{
+        line-height: 25px;
+    }
+    .professional-title{
+        top: 20%;
+        padding: 0px 10px;
+    }
+    .professional-team:hover .professional-title{
+        bottom: 0%;
+        opacity: 1;
+    }
+}
+@media screen and (max-width:768px){
+    /*****Header Area Stard****/
+    .logo-area img{
+        width:150px;
+        text-align: center;
+    }
+    .main-menu{
+        position: fixed;
+        background:#1B1B1B;
+        left: 0;
+        top: 70px;
+        width:100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        transform-origin:top;
+        transform:scaleY(0);
+        transition:0.3s;
+        z-index: 999;
+    }
+    .display-block{
+        transform:scaleY(1);
+        transition:0.3s;
+    }
+    .main-menu li{
+        display:block;
+        line-height: 35px;
+    }
+    .logo-area span{
+        display:block;
+    }
+    .sub-menu{
+        position: relative;
+        padding-top:0;
+        margin-top: 10px;
+        width:100%;
+        display: none;
+    }
+    .main-menu li:hover .sub-menu{
+        opacity:1;
+        margin-top:35px;
+        display: block;
+    }
+    /*****Header Area Ends****/
+
+    /****About Area****/
+    .about-width{
+        width:50%;
+    }
+    .about-left img{
+        width:80px;
+        margin: auto;
+        display:block;
+    }
+    .about-right{
+        margin-bottom: 90px;
+    }
+    /***News Area****/
+    .news-img{
+        width:100%;
+        position: inherit;
+    }
+    .news-content{
+        width:100%;
+        position: inherit;
+    }
+    /****Work Area****/
+    .nav-pills .nav-link{
+        padding:5px;
+        margin: 0px;
+    }
+    .company-logo ul li {
+        width: 33%;
+    }
+    .footer-icon ul{
+        float:inherit;
+    }
+    /******About work Area****/
+    .about-styles{
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .about-work-left img{
+        margin: auto;
+    }
+    .professional-title{
+        bottom: 60px !important;
+        padding: 0px 60px !important;
+    }
+    .professional-team:hover .professional-title{
+        bottom: 40%;
+        opacity: 1;
+    }
+    .professional-team{
+        margin-bottom: 50px;
+    }
+}
